@@ -7,21 +7,37 @@
 //
 
 import Cocoa
+import AVFoundation
+import AppKit
+
 
 class ViewController: NSViewController {
-
+    
+    @IBOutlet weak var btnloop: NSButton!
+    @IBOutlet weak var btnrecord: NSButton!
+    
+    var myAudioPlayer:AVAudioPlayer = AVAudioPlayer()
+    var audioRecorder: AVAudioRecorder = AVAudioRecorder()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
+        
 
     override var representedObject: AnyObject? {
         didSet {
         // Update the view, if already loaded.
         }
     }
-
+    @IBAction func btnRecordClick(sender: AnyObject) {
+        let url:NSURL = NSBundle.mainBundle().URLForResource("bass_fart", withExtension: ".aif")!
+        do {
+            myAudioPlayer = try AVAudioPlayer(contentsOfURL: url, fileTypeHint: nil) } catch _ { }
+            myAudioPlayer.prepareToPlay()
+            myAudioPlayer.play()
+        
+    }
 
 }
 

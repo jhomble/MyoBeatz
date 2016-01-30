@@ -13,6 +13,15 @@
 		D0EFB6F21C5C90E800929E9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB6F01C5C90E800929E9D /* Main.storyboard */; };
 		D0EFB6FD1C5C90E800929E9D /* MyoBeatz4_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB6FC1C5C90E800929E9D /* MyoBeatz4_0Tests.swift */; };
 		D0EFB7081C5C90E800929E9D /* MyoBeatz4_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7071C5C90E800929E9D /* MyoBeatz4_0UITests.swift */; };
+		D0EFB7171C5C96F900929E9D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7161C5C96F900929E9D /* EditViewController.swift */; };
+		D0EFB71B1C5C9BB100929E9D /* dataHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB71A1C5C9BB100929E9D /* dataHashMap.swift */; };
+		D0EFB7291C5D07E200929E9D /* vocalhit.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7241C5D07E200929E9D /* vocalhit.aif */; };
+		D0EFB72A1C5D07E200929E9D /* bass_fart.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7251C5D07E200929E9D /* bass_fart.aif */; };
+		D0EFB72B1C5D07E200929E9D /* buzzsaw-bass-synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7261C5D07E200929E9D /* buzzsaw-bass-synth.aif */; };
+		D0EFB72C1C5D07E200929E9D /* curiousbass.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7271C5D07E200929E9D /* curiousbass.aif */; };
+		D0EFB72D1C5D07E200929E9D /* ohh.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7281C5D07E200929E9D /* ohh.aif */; };
+		D0EFB7311C5D184900929E9D /* YourSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7301C5D184900929E9D /* YourSoundsViewController.swift */; };
+		D0EFB7361C5D2B1C00929E9D /* dataMusicHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7351C5D2B1C00929E9D /* dataMusicHash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		D0EFB7031C5C90E800929E9D /* MyoBeatz4.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyoBeatz4.0UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EFB7071C5C90E800929E9D /* MyoBeatz4_0UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyoBeatz4_0UITests.swift; sourceTree = "<group>"; };
 		D0EFB7091C5C90E800929E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0EFB7161C5C96F900929E9D /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		D0EFB71A1C5C9BB100929E9D /* dataHashMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataHashMap.swift; sourceTree = "<group>"; };
+		D0EFB7241C5D07E200929E9D /* vocalhit.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = vocalhit.aif; path = ../../MyoBeatzSounds/vocalhit.aif; sourceTree = "<group>"; };
+		D0EFB7251C5D07E200929E9D /* bass_fart.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = bass_fart.aif; path = ../../MyoBeatzSounds/bass_fart.aif; sourceTree = "<group>"; };
+		D0EFB7261C5D07E200929E9D /* buzzsaw-bass-synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = "buzzsaw-bass-synth.aif"; path = "../../MyoBeatzSounds/buzzsaw-bass-synth.aif"; sourceTree = "<group>"; };
+		D0EFB7271C5D07E200929E9D /* curiousbass.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = curiousbass.aif; path = ../../MyoBeatzSounds/curiousbass.aif; sourceTree = "<group>"; };
+		D0EFB7281C5D07E200929E9D /* ohh.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = ohh.aif; path = ../../MyoBeatzSounds/ohh.aif; sourceTree = "<group>"; };
+		D0EFB7301C5D184900929E9D /* YourSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourSoundsViewController.swift; sourceTree = "<group>"; };
+		D0EFB7351C5D2B1C00929E9D /* dataMusicHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataMusicHash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +115,14 @@
 			children = (
 				D0EFB6EA1C5C90E800929E9D /* AppDelegate.swift */,
 				D0EFB6EC1C5C90E800929E9D /* ViewController.swift */,
+				D0EFB7161C5C96F900929E9D /* EditViewController.swift */,
+				D0EFB7301C5D184900929E9D /* YourSoundsViewController.swift */,
+				D0EFB7321C5D2AD200929E9D /* Data */,
 				D0EFB6EE1C5C90E800929E9D /* Assets.xcassets */,
 				D0EFB6F01C5C90E800929E9D /* Main.storyboard */,
 				D0EFB6F31C5C90E800929E9D /* Info.plist */,
+				D0EFB7381C5D427200929E9D /* Music */,
+				D0EFB71C1C5D025F00929E9D /* Sounds */,
 			);
 			path = MyoBeatz4.0;
 			sourceTree = "<group>";
@@ -120,6 +143,34 @@
 				D0EFB7091C5C90E800929E9D /* Info.plist */,
 			);
 			path = MyoBeatz4.0UITests;
+			sourceTree = "<group>";
+		};
+		D0EFB71C1C5D025F00929E9D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D0EFB7241C5D07E200929E9D /* vocalhit.aif */,
+				D0EFB7251C5D07E200929E9D /* bass_fart.aif */,
+				D0EFB7261C5D07E200929E9D /* buzzsaw-bass-synth.aif */,
+				D0EFB7271C5D07E200929E9D /* curiousbass.aif */,
+				D0EFB7281C5D07E200929E9D /* ohh.aif */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		D0EFB7321C5D2AD200929E9D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D0EFB71A1C5C9BB100929E9D /* dataHashMap.swift */,
+				D0EFB7351C5D2B1C00929E9D /* dataMusicHash.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		D0EFB7381C5D427200929E9D /* Music */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +277,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EFB72A1C5D07E200929E9D /* bass_fart.aif in Resources */,
 				D0EFB6EF1C5C90E800929E9D /* Assets.xcassets in Resources */,
+				D0EFB72C1C5D07E200929E9D /* curiousbass.aif in Resources */,
 				D0EFB6F21C5C90E800929E9D /* Main.storyboard in Resources */,
+				D0EFB72D1C5D07E200929E9D /* ohh.aif in Resources */,
+				D0EFB7291C5D07E200929E9D /* vocalhit.aif in Resources */,
+				D0EFB72B1C5D07E200929E9D /* buzzsaw-bass-synth.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,8 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EFB7311C5D184900929E9D /* YourSoundsViewController.swift in Sources */,
+				D0EFB71B1C5C9BB100929E9D /* dataHashMap.swift in Sources */,
 				D0EFB6ED1C5C90E800929E9D /* ViewController.swift in Sources */,
+				D0EFB7361C5D2B1C00929E9D /* dataMusicHash.swift in Sources */,
 				D0EFB6EB1C5C90E800929E9D /* AppDelegate.swift in Sources */,
+				D0EFB7171C5C96F900929E9D /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
