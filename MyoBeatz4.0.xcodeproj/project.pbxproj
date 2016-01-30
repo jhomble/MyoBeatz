@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C93FE341C5D520700C420FA /* bass_fart.aif in Resources */ = {isa = PBXBuildFile; fileRef = 8C93FE2F1C5D520700C420FA /* bass_fart.aif */; };
+		8C93FE351C5D520700C420FA /* buzzsaw-bass-synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 8C93FE301C5D520700C420FA /* buzzsaw-bass-synth.aif */; };
+		8C93FE361C5D520700C420FA /* curiousbass.aif in Resources */ = {isa = PBXBuildFile; fileRef = 8C93FE311C5D520700C420FA /* curiousbass.aif */; };
+		8C93FE371C5D520700C420FA /* ohh.aif in Resources */ = {isa = PBXBuildFile; fileRef = 8C93FE321C5D520700C420FA /* ohh.aif */; };
+		8C93FE381C5D520700C420FA /* vocalhit.aif in Resources */ = {isa = PBXBuildFile; fileRef = 8C93FE331C5D520700C420FA /* vocalhit.aif */; };
 		D0EFB6EB1C5C90E800929E9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB6EA1C5C90E800929E9D /* AppDelegate.swift */; };
 		D0EFB6ED1C5C90E800929E9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB6EC1C5C90E800929E9D /* ViewController.swift */; };
 		D0EFB6EF1C5C90E800929E9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB6EE1C5C90E800929E9D /* Assets.xcassets */; };
@@ -15,11 +20,6 @@
 		D0EFB7081C5C90E800929E9D /* MyoBeatz4_0UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7071C5C90E800929E9D /* MyoBeatz4_0UITests.swift */; };
 		D0EFB7171C5C96F900929E9D /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7161C5C96F900929E9D /* EditViewController.swift */; };
 		D0EFB71B1C5C9BB100929E9D /* dataHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB71A1C5C9BB100929E9D /* dataHashMap.swift */; };
-		D0EFB7291C5D07E200929E9D /* vocalhit.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7241C5D07E200929E9D /* vocalhit.aif */; };
-		D0EFB72A1C5D07E200929E9D /* bass_fart.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7251C5D07E200929E9D /* bass_fart.aif */; };
-		D0EFB72B1C5D07E200929E9D /* buzzsaw-bass-synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7261C5D07E200929E9D /* buzzsaw-bass-synth.aif */; };
-		D0EFB72C1C5D07E200929E9D /* curiousbass.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7271C5D07E200929E9D /* curiousbass.aif */; };
-		D0EFB72D1C5D07E200929E9D /* ohh.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7281C5D07E200929E9D /* ohh.aif */; };
 		D0EFB7311C5D184900929E9D /* YourSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7301C5D184900929E9D /* YourSoundsViewController.swift */; };
 		D0EFB7361C5D2B1C00929E9D /* dataMusicHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7351C5D2B1C00929E9D /* dataMusicHash.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C93FE2F1C5D520700C420FA /* bass_fart.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = bass_fart.aif; sourceTree = "<group>"; };
+		8C93FE301C5D520700C420FA /* buzzsaw-bass-synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "buzzsaw-bass-synth.aif"; sourceTree = "<group>"; };
+		8C93FE311C5D520700C420FA /* curiousbass.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = curiousbass.aif; sourceTree = "<group>"; };
+		8C93FE321C5D520700C420FA /* ohh.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = ohh.aif; sourceTree = "<group>"; };
+		8C93FE331C5D520700C420FA /* vocalhit.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = vocalhit.aif; sourceTree = "<group>"; };
 		D0EFB6E71C5C90E800929E9D /* MyoBeatz4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyoBeatz4.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0EFB6EA1C5C90E800929E9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0EFB6EC1C5C90E800929E9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,11 +61,6 @@
 		D0EFB7091C5C90E800929E9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0EFB7161C5C96F900929E9D /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		D0EFB71A1C5C9BB100929E9D /* dataHashMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataHashMap.swift; sourceTree = "<group>"; };
-		D0EFB7241C5D07E200929E9D /* vocalhit.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = vocalhit.aif; path = ../../MyoBeatzSounds/vocalhit.aif; sourceTree = "<group>"; };
-		D0EFB7251C5D07E200929E9D /* bass_fart.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = bass_fart.aif; path = ../../MyoBeatzSounds/bass_fart.aif; sourceTree = "<group>"; };
-		D0EFB7261C5D07E200929E9D /* buzzsaw-bass-synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = "buzzsaw-bass-synth.aif"; path = "../../MyoBeatzSounds/buzzsaw-bass-synth.aif"; sourceTree = "<group>"; };
-		D0EFB7271C5D07E200929E9D /* curiousbass.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = curiousbass.aif; path = ../../MyoBeatzSounds/curiousbass.aif; sourceTree = "<group>"; };
-		D0EFB7281C5D07E200929E9D /* ohh.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = ohh.aif; path = ../../MyoBeatzSounds/ohh.aif; sourceTree = "<group>"; };
 		D0EFB7301C5D184900929E9D /* YourSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourSoundsViewController.swift; sourceTree = "<group>"; };
 		D0EFB7351C5D2B1C00929E9D /* dataMusicHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataMusicHash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,11 +148,11 @@
 		D0EFB71C1C5D025F00929E9D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				D0EFB7241C5D07E200929E9D /* vocalhit.aif */,
-				D0EFB7251C5D07E200929E9D /* bass_fart.aif */,
-				D0EFB7261C5D07E200929E9D /* buzzsaw-bass-synth.aif */,
-				D0EFB7271C5D07E200929E9D /* curiousbass.aif */,
-				D0EFB7281C5D07E200929E9D /* ohh.aif */,
+				8C93FE2F1C5D520700C420FA /* bass_fart.aif */,
+				8C93FE301C5D520700C420FA /* buzzsaw-bass-synth.aif */,
+				8C93FE311C5D520700C420FA /* curiousbass.aif */,
+				8C93FE321C5D520700C420FA /* ohh.aif */,
+				8C93FE331C5D520700C420FA /* vocalhit.aif */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -277,13 +277,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0EFB72A1C5D07E200929E9D /* bass_fart.aif in Resources */,
+				8C93FE371C5D520700C420FA /* ohh.aif in Resources */,
 				D0EFB6EF1C5C90E800929E9D /* Assets.xcassets in Resources */,
-				D0EFB72C1C5D07E200929E9D /* curiousbass.aif in Resources */,
 				D0EFB6F21C5C90E800929E9D /* Main.storyboard in Resources */,
-				D0EFB72D1C5D07E200929E9D /* ohh.aif in Resources */,
-				D0EFB7291C5D07E200929E9D /* vocalhit.aif in Resources */,
-				D0EFB72B1C5D07E200929E9D /* buzzsaw-bass-synth.aif in Resources */,
+				8C93FE341C5D520700C420FA /* bass_fart.aif in Resources */,
+				8C93FE381C5D520700C420FA /* vocalhit.aif in Resources */,
+				8C93FE351C5D520700C420FA /* buzzsaw-bass-synth.aif in Resources */,
+				8C93FE361C5D520700C420FA /* curiousbass.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,6 +535,7 @@
 				D0EFB70E1C5C90E800929E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0EFB70F1C5C90E800929E9D /* Build configuration list for PBXNativeTarget "MyoBeatz4.0Tests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +544,7 @@
 				D0EFB7111C5C90E800929E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0EFB7121C5C90E800929E9D /* Build configuration list for PBXNativeTarget "MyoBeatz4.0UITests" */ = {
 			isa = XCConfigurationList;
@@ -551,6 +553,7 @@
 				D0EFB7141C5C90E800929E9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

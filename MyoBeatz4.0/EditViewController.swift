@@ -76,5 +76,6 @@ class EditViewController: NSViewController {
         soundPlayer.prepareToPlay()
         soundPlayer.play()
     }
-   
+    
+  
 }

@@ -18,12 +18,39 @@ class ViewController: NSViewController {
     
     var myAudioPlayer:AVAudioPlayer = AVAudioPlayer()
     var audioRecorder: AVAudioRecorder = AVAudioRecorder()
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+        self.view.wantsLayer = true
+
         
+        NSEvent.addLocalMonitorForEventsMatchingMask(.KeyDownMask) {
+            (aEvent) -> NSEvent? in
+            self.keyDown(aEvent)
+            return aEvent
+        }
+        
+        
+        NSEvent.addLocalMonitorForEventsMatchingMask(.FlagsChangedMask) { (theEvent) -> NSEvent? in
+            self.flagsChanged(theEvent)
+            return theEvent
+        }
+        
+        
+       
+    }
+    
+    
+    override func awakeFromNib() {
+        if self.view.layer != nil {
+            let color : CGColorRef = CGColorCreateGenericRGB(1.0, 1.0, 1.0, 1.0)
+            self.view.layer?.backgroundColor = color
+        }
+        
+    }
+    
+    
 
     override var representedObject: AnyObject? {
         didSet {
@@ -37,6 +64,15 @@ class ViewController: NSViewController {
             myAudioPlayer.prepareToPlay()
             myAudioPlayer.play()
         
+    }
+
+    override func keyDown(theEvent: NSEvent) {
+        //print("key event!!")
+        if (theEvent.keyCode == 1){
+            print("assda");
+            //do whatever when the s key is pressed
+        }
+
     }
 
 }
