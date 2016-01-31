@@ -29,6 +29,8 @@ class EditViewController: NSViewController {
     var soundArr:[String] = dataHashMap.sharedInstance.getSoundNames();
     var soundPlayer:AVAudioPlayer = AVAudioPlayer();
     
+    var mainView = ViewController.sharedInstance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
@@ -77,5 +79,12 @@ class EditViewController: NSViewController {
         soundPlayer.play()
     }
     
+    @IBAction func changeGest1(sender: AnyObject) {
+        print("a")
+        print((cbgest1.selectedCell()?.title)!)
+        let name = cbgest1.selectedCell()?.title
+       // print(ViewController.sharedInstance.lbgest1.stringValue)
+        dataHashMap.sharedInstance.changeCurrentSounds(name!, index: 0)
+    }
   
 }

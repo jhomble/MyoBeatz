@@ -18,11 +18,20 @@ class ViewController: NSViewController {
     @IBOutlet weak var chkloop: NSButton!
     @IBOutlet weak var chkrecord: NSButton!
     @IBOutlet weak var lbTimer: NSTextFieldCell!
+    @IBOutlet weak var lbgest1: NSTextField!
+    @IBOutlet weak var lbgest2: NSTextField!
+    @IBOutlet weak var lbgest3: NSTextField!
+    @IBOutlet weak var lbgest4: NSTextField!
     
     var timer:NSTimer = NSTimer();
     var counter = 0;
     var myAudioPlayer:AVAudioPlayer = AVAudioPlayer()
     var audioRecorder: AVAudioRecorder = AVAudioRecorder()
+    var sounds:[String] = []
+    
+    
+    static let sharedInstance = ViewController();
+
 
     
     override func viewDidLoad() {
@@ -37,7 +46,21 @@ class ViewController: NSViewController {
             return aEvent
         }
         
+        changeGest1()
+        changeGest2()
+        changeGest3()
+        changeGest4()
         
+        /*sounds = dataHashMap.sharedInstance.getSoundNames();
+        lbgest1.stringValue = sounds[0];
+        print(lbgest1.stringValue);
+        lbgest2.stringValue = sounds[1];
+        print(lbgest2.stringValue);
+        lbgest3.stringValue = sounds[2];
+        print(lbgest3.stringValue);
+        lbgest4.stringValue = sounds[3];
+        print(lbgest4.stringValue);
+        */
         NSEvent.addLocalMonitorForEventsMatchingMask(.FlagsChangedMask) { (theEvent) -> NSEvent? in
             self.flagsChanged(theEvent)
             return theEvent
@@ -53,6 +76,12 @@ class ViewController: NSViewController {
         
     }
     
+    @IBAction func updateSounds(sender: AnyObject) {
+        changeGest1()
+        changeGest2()
+        changeGest3()
+        changeGest4()
+    }
     
 
     override var representedObject: AnyObject? {
@@ -83,6 +112,22 @@ class ViewController: NSViewController {
         
     }
     
+    func changeGest1(){
+        lbgest1.stringValue = dataHashMap.sharedInstance.getCurrentSounds()[0];
+    }
+    
+    func changeGest2(){
+        lbgest2.stringValue = dataHashMap.sharedInstance.getCurrentSounds()[1];
+    }
+    
+    func changeGest3(){
+        lbgest3.stringValue = dataHashMap.sharedInstance.getCurrentSounds()[2];
+    }
+    
+    func changeGest4(){
+        lbgest4.stringValue = dataHashMap.sharedInstance.getCurrentSounds()[3];
+    }
+    
     func UpdateTimer() {
         lbTimer.stringValue = String(counter++)
     }
@@ -90,11 +135,20 @@ class ViewController: NSViewController {
     override func keyDown(theEvent: NSEvent) {
         //print("key event!!")
         if (theEvent.keyCode == 1){
-            print("assda");
+            //print("key press detected playing sound 1");
+           // let gestSound:NSURL = NSBundle.mainBundle().URLForResource(dataHashMap.sharedInstance.getPath((cbgest1.selectedCell()?.title)!), withExtension: "aif")!;
+
             //do whatever when the s key is pressed
         }
-
     }
+    
+    func playGest(url: NSURL){
+        do { myAudioPlayer = try AVAudioPlayer(contentsOfURL: url, fileTypeHint: nil) } catch _ { }
+        myAudioPlayer.prepareToPlay()
+        myAudioPlayer.play()
+    }
+    
+
     
     func record() {
         
