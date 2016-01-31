@@ -22,6 +22,10 @@ class ViewController: NSViewController {
     @IBOutlet weak var lbgest2: NSTextField!
     @IBOutlet weak var lbgest3: NSTextField!
     @IBOutlet weak var lbgest4: NSTextField!
+    @IBOutlet weak var btnplaygest1: NSButton!
+    @IBOutlet weak var btnplaygest2: NSButton!
+    @IBOutlet weak var btnplaygest3: NSButton!
+    @IBOutlet weak var btnplaygest4: NSButton!
     
     var timer:NSTimer = NSTimer();
     var counter = 0;
@@ -31,8 +35,6 @@ class ViewController: NSViewController {
     
     
     static let sharedInstance = ViewController();
-
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +75,6 @@ class ViewController: NSViewController {
             let color : CGColorRef = CGColorCreateGenericRGB(1.0, 1.0, 1.0, 1.0)
             self.view.layer?.backgroundColor = color
         }
-        
     }
     
     @IBAction func updateSounds(sender: AnyObject) {
@@ -148,7 +149,25 @@ class ViewController: NSViewController {
         myAudioPlayer.play()
     }
     
+    @IBAction func playgest1(sender: AnyObject) {
+        let gestSound:NSURL = NSBundle.mainBundle().URLForResource(dataHashMap.sharedInstance.getPath(lbgest1.stringValue), withExtension: "aif")!;
+        playGest(gestSound);
+    }
 
+    @IBAction func playgest2(sender: AnyObject) {
+        let gestSound:NSURL = NSBundle.mainBundle().URLForResource(dataHashMap.sharedInstance.getPath(lbgest2.stringValue), withExtension: "aif")!;
+        playGest(gestSound);
+    }
+    
+    @IBAction func playgest3(sender: AnyObject) {
+        let gestSound:NSURL = NSBundle.mainBundle().URLForResource(dataHashMap.sharedInstance.getPath(lbgest3.stringValue), withExtension: "aif")!;
+        playGest(gestSound);
+    }
+    
+    @IBAction func playgeset4(sender: AnyObject) {
+        let gestSound:NSURL = NSBundle.mainBundle().URLForResource(dataHashMap.sharedInstance.getPath(lbgest4.stringValue), withExtension: "aif")!;
+        playGest(gestSound);
+    }
     
     func record() {
         

@@ -33,6 +33,8 @@ class EditViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.wantsLayer = true
+
         // Do view setup here.
         cbgest1.addItemsWithObjectValues(soundArr);
         cbgest2.addItemsWithObjectValues(soundArr);
@@ -41,7 +43,12 @@ class EditViewController: NSViewController {
         
     }
     
-    
+    override func awakeFromNib() {
+        if self.view.layer != nil {
+            let color : CGColorRef = CGColorCreateGenericRGB(1.0, 1.0, 1.0, 1.0)
+            self.view.layer?.backgroundColor = color
+        }
+    }
     
     @IBAction func btnHandOnClick(sender: AnyObject) {
         if(btnHand.title == "Left Hand"){
@@ -80,11 +87,23 @@ class EditViewController: NSViewController {
     }
     
     @IBAction func changeGest1(sender: AnyObject) {
-        print("a")
-        print((cbgest1.selectedCell()?.title)!)
         let name = cbgest1.selectedCell()?.title
-       // print(ViewController.sharedInstance.lbgest1.stringValue)
         dataHashMap.sharedInstance.changeCurrentSounds(name!, index: 0)
     }
   
+    @IBAction func changeGest2(sender: AnyObject) {
+        let name = cbgest1.selectedCell()?.title
+        dataHashMap.sharedInstance.changeCurrentSounds(name!, index: 1)
+    }
+
+    @IBAction func changeGest3(sender: AnyObject) {
+        let name = cbgest1.selectedCell()?.title
+        dataHashMap.sharedInstance.changeCurrentSounds(name!, index: 2)
+    }
+
+    @IBAction func changeGest4(sender: AnyObject) {
+        let name = cbgest1.selectedCell()?.title
+        dataHashMap.sharedInstance.changeCurrentSounds(name!, index: 3)
+    }
+    
 }

@@ -17,8 +17,17 @@ class YourSoundsViewController: NSViewController, NSTableViewDataSource, NSTable
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.wantsLayer = true
+
         tblMusic.reloadData();
         // Do view setup here.
+    }
+    
+    override func awakeFromNib() {
+        if self.view.layer != nil {
+            let color : CGColorRef = CGColorCreateGenericRGB(1.0, 1.0, 1.0, 1.0)
+            self.view.layer?.backgroundColor = color
+        }
     }
     
     func numberOfRowsInTableView(tableView: NSTableView) -> Int {

@@ -28,6 +28,9 @@ class dataHashMap{
         h["ohh"] = "ohh";
         h["Vocal Hit"] = "vocalhit";
         h["Buzzsaw Bass"] = "buzzsaw-bass-synth";
+        h["Rooster"] = "Rooster";
+        h["Horse"] = "Horse whinny 16";
+        h["Bird Chirp"] = "Bird chirp Mexican Red Parot";
         
         currSounds = ["Bass Fart", "Curious Bass", "ohh", "Vocal Hit"]
     }

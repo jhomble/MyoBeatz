@@ -22,6 +22,9 @@
 		D0EFB71B1C5C9BB100929E9D /* dataHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB71A1C5C9BB100929E9D /* dataHashMap.swift */; };
 		D0EFB7311C5D184900929E9D /* YourSoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7301C5D184900929E9D /* YourSoundsViewController.swift */; };
 		D0EFB7361C5D2B1C00929E9D /* dataMusicHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EFB7351C5D2B1C00929E9D /* dataMusicHash.swift */; };
+		D0EFB7481C5DCACB00929E9D /* Rooster.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7451C5DCACB00929E9D /* Rooster.aif */; };
+		D0EFB7491C5DCACB00929E9D /* Horse whinny 16.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7461C5DCACB00929E9D /* Horse whinny 16.aif */; };
+		D0EFB74A1C5DCACB00929E9D /* Bird chirp Mexican Red Parot.aif in Resources */ = {isa = PBXBuildFile; fileRef = D0EFB7471C5DCACB00929E9D /* Bird chirp Mexican Red Parot.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		D0EFB71A1C5C9BB100929E9D /* dataHashMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataHashMap.swift; sourceTree = "<group>"; };
 		D0EFB7301C5D184900929E9D /* YourSoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourSoundsViewController.swift; sourceTree = "<group>"; };
 		D0EFB7351C5D2B1C00929E9D /* dataMusicHash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataMusicHash.swift; sourceTree = "<group>"; };
+		D0EFB7451C5DCACB00929E9D /* Rooster.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = Rooster.aif; path = ../../../Downloads/Rooster.aif; sourceTree = "<group>"; };
+		D0EFB7461C5DCACB00929E9D /* Horse whinny 16.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Horse whinny 16.aif"; path = "../../../Downloads/Horse whinny 16.aif"; sourceTree = "<group>"; };
+		D0EFB7471C5DCACB00929E9D /* Bird chirp Mexican Red Parot.aif */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bird chirp Mexican Red Parot.aif"; path = "../../../Downloads/Bird chirp Mexican Red Parot.aif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,9 @@
 		D0EFB71C1C5D025F00929E9D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				D0EFB7451C5DCACB00929E9D /* Rooster.aif */,
+				D0EFB7461C5DCACB00929E9D /* Horse whinny 16.aif */,
+				D0EFB7471C5DCACB00929E9D /* Bird chirp Mexican Red Parot.aif */,
 				8C93FE2F1C5D520700C420FA /* bass_fart.aif */,
 				8C93FE301C5D520700C420FA /* buzzsaw-bass-synth.aif */,
 				8C93FE311C5D520700C420FA /* curiousbass.aif */,
@@ -285,6 +294,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0EFB74A1C5DCACB00929E9D /* Bird chirp Mexican Red Parot.aif in Resources */,
+				D0EFB7491C5DCACB00929E9D /* Horse whinny 16.aif in Resources */,
 				8C93FE371C5D520700C420FA /* ohh.aif in Resources */,
 				D0EFB6EF1C5C90E800929E9D /* Assets.xcassets in Resources */,
 				D0EFB6F21C5C90E800929E9D /* Main.storyboard in Resources */,
@@ -292,6 +303,7 @@
 				8C93FE381C5D520700C420FA /* vocalhit.aif in Resources */,
 				8C93FE351C5D520700C420FA /* buzzsaw-bass-synth.aif in Resources */,
 				8C93FE361C5D520700C420FA /* curiousbass.aif in Resources */,
+				D0EFB7481C5DCACB00929E9D /* Rooster.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
