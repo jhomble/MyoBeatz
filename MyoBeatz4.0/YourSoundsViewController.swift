@@ -27,13 +27,16 @@ class YourSoundsViewController: NSViewController, NSTableViewDataSource, NSTable
     
     func tableView(tableView: NSTableView, viewForTableColumn tableColumn: NSTableColumn?, row: Int) -> NSView? {
         
-        var cellView = tblMusic.makeViewWithIdentifier("cell", owner: self) as! NSTableCellView;
+        let cellView = tblMusic.makeViewWithIdentifier("cell", owner: self) as! NSTableCellView;
         cellView.textField?.stringValue = dataMusicHash.sharedInstance.getMusicNames().objectAtIndex(row) as! String;
+        print(cellView.textField?.stringValue)
         return cellView;
     }
     
+    
     @IBAction func tblOnclick(sender: AnyObject) {
-        let gestSound:NSURL = NSBundle.mainBundle().URLForResource(dataMusicHash.sharedInstance.getPath((tblMusic.selectedCell()?.title)!), withExtension: "aif")!;
+        print(tableView(tblMusic, viewForTableColumn: nil, row: 1));
+        let gestSound:NSURL = NSBundle.mainBundle().URLForResource(dataMusicHash.sharedInstance.getPath(tblMusic.stringValue), withExtension: "aif")!;
         playGest(gestSound);
     }
     

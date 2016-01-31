@@ -113,6 +113,7 @@
 		D0EFB6E91C5C90E800929E9D /* MyoBeatz4.0 */ = {
 			isa = PBXGroup;
 			children = (
+				D0EFB7391C5D7B0B00929E9D /* Supporting Files */,
 				D0EFB6EA1C5C90E800929E9D /* AppDelegate.swift */,
 				D0EFB6EC1C5C90E800929E9D /* ViewController.swift */,
 				D0EFB7161C5C96F900929E9D /* EditViewController.swift */,
@@ -171,6 +172,13 @@
 			children = (
 			);
 			name = Music;
+			sourceTree = "<group>";
+		};
+		D0EFB7391C5D7B0B00929E9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -31,7 +31,13 @@ class dataMusicHash {
     }
     
     func getPath(name:String) -> String{
-        return h[name]!;
+        if(name != ""){
+            print("a");
+            print(name);
+            print("b");
+            return h[name]!;
+        }
+        else { return ""; }
     }
 
     func getCount() -> Int{
